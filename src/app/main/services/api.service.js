@@ -8,7 +8,9 @@ angular.module('feedcellarSpa')
 
     return {
       search: function(query) {
+        console.log(query);
         var url = $base_url + '?word=' + query;
+        console.log(url);
         return $http({
               method : 'GET',
               url : url
