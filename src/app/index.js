@@ -1,6 +1,14 @@
 'use strict';
 
-angular.module('feedcellarSpa', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'ui.bootstrap'])
+angular.module('feedcellarSpa', [
+    'ngAnimate',
+    'ngCookies',
+    'ngTouch',
+    'ngSanitize',
+    'ngResource',
+    'ngRoute',
+    'ui.bootstrap'
+  ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
