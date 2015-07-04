@@ -6,7 +6,7 @@
 
   <div dir-paginate="feed in feeds | itemsPerPage: 50">
     <p>
-      <a href="{{feed._value._key.link}}">{{feed._value._key.title}}</a>
+      <a href="{{feed.link}}">{{feed.title}}</a>
     </p>
   </div>
   <dir-pagination-controls></dir-pagination-controls>

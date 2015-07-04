@@ -8,6 +8,11 @@ angular.module('feedcellarSpa')
 
     $scope.doSearch = function() {
       Api.search($scope.query).then(function(res) {
-      $scope.feeds = angular.fromJson(res.data);
+      var raw_feeds = angular.fromJson(res.data);
+      var feeds = [];
+      angular.forEach(raw_feeds, function(feed, i) {
+        feeds[i] = feed._value._key;
+      });
+      $scope.feeds = feeds;
     })};
   });
