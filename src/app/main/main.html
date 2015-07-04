@@ -6,6 +6,7 @@
 
   <div dir-paginate="feed in feeds | itemsPerPage: 50">
     <p>
+      {{feed.date | date:'yyyy-MM-dd'}}
       <a href="{{feed.link}}">{{feed.title}}</a>
     </p>
   </div>
