@@ -7,7 +7,8 @@ angular.module('feedcellarSpa', [
     'ngSanitize',
     'ngResource',
     'ngRoute',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'angularUtils.directives.dirPagination'
   ])
   .config(function ($routeProvider) {
     $routeProvider
