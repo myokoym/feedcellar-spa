@@ -12,14 +12,14 @@ angular.module('feedcellarSpa')
         var url = $base_url + '?word=' + query;
         console.log(url);
         return $http({
-              method : 'GET',
-              url : url
-          }).success(function(data, status, headers, config) {
-              console.log(status);
-              //$scope.feeds = angular.fromJson(data);
-          }).error(function(data, status, headers, config) {
-              console.log(status);
-          });
+                 method : 'GET',
+                 url : url
+               }).success(function(data, status, headers, config) {
+                 console.log(status);
+                 //$scope.feeds = angular.fromJson(data);
+               }).error(function(data, status, headers, config) {
+                 console.log(status);
+               });
       }
     };
   });
