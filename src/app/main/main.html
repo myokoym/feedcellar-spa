@@ -3,6 +3,7 @@
   <div ng-include="'app/components/navbar/navbar.html'"></div>
 
   <input type="text" ng-model="query" ng-change="doSearch()" />
+  <p ng-show="query">{{feeds.length || 0}} results</p>
 
   <div dir-paginate="feed in feeds | itemsPerPage: 50">
     <p>
